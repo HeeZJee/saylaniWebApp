@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Resgistration Form</title>
+    <style>
+        form{
+            background-color: blueviolet;
+            color: #fff; 
+            padding: 30px;
+        }
+        div{
+            margin-bottom: 20px;
+        }
+        div > label{
+            display: inline-block;
+            text-transform: uppercase;
+            vertical-align: top;
+            width: 15%;
+            margin: 0 10px 20px 10px;   
+        }
+
+        h1{
+            font: 1.8em;
+            text-align: center;
+            text-decoration: underline;
+            color: blueviolet;
+        }
+        img{
+            display: block;
+            margin: 0 auto;
+            width: 300px;
+            max-width: 100%;
+            height: auto;
+        }
+div:last-child{
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+table{
+    display: inline-block;
+    }
+
+
+    </style>
+</head>
+<body>
+    <img src="images/Saylani-logo.png" alt="Saylani-logo">
+    <h1>
+        Student Resgistration Form
+    </h1>
+    <form action="submit.html" get="post"> 
+      
+       
+        <div>
+            <label for='fname'>FIRST NAME</label> 
+            <input type="text" name="fname" id='fname' placeholder="Enter first name" maxlength="30" required> 
+            (max 30 characters a-z and A-Z)
+        </div> 
+   
+
+        <div>
+            <label for="lanme" class="attr">LAST NAME</label>
+            <input type="text" name="lname" id="lanme" placeholder="Enter last name" maxlength="30" required>
+            (max 30 characters a-z and A-Z)
+        </div>
+
+        <div>
+            <label for="birth">DATE OF BIRTH</label>
+            <input type="date" name="birth" id="birth" required>
+        </div>
+
+        <div>
+            <label for="email">EMAIL ID</label>
+            <input type="email" name="email" id="email" placeholder="Enter email address" required>
+        </div>
+
+        <div>
+            <label for="email">MOBILE NUMBER</label>
+            <input type="tel" name="mobile" id="email" placeholder="Enter mobile number" maxlength="10" required> 
+            (10 digits number)
+        </div>
+
+        <div>
+            <label>Gender</label>
+            <span>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female" value="female">
+            </span>
+        </div>
+        
+        <div>
+            <label for="address">Address</label>
+            <textarea name="address" id="address" cols="30" rows="3"></textarea>
+        </div>
+
+        <div> 
+            <label for="city">City</label>
+            <input type="text" name="city" placeholder="Enter city Name" id="city" maxlength="50" required>
+        </div>
+
+        <div>
+            <label for="pincode">PIN CODE</label>
+            <input type="text" name="pincode" id="pincode" placeholder="Enter pincode"  maxlength="6">
+        </div>
+
+        <div >
+            <label for="state">STATE</label>
+            <input type="text" name="state" id="state" placeholder="Enter state"  maxlength="30">
+        (max 30 characters a-z and A-Z)
+        </div>
+
+         <div >
+            <label for="country">Country</label>
+            <input type="text" name="country" id="country" placeholder="Enter country" required>
+        </div>
+       
+         <div>
+            <label>Hobbies</label>
+            <span>
+            <label for="drawing">Drawing</label>
+            <input type="checkbox" name="hobby" id="drawing">
+            <label for="singing">Singing</label>  
+            <input type="checkbox" name="hobby" id="singing">
+            <label for="dancing">Dancing</label>
+            <input type="checkbox" name="hobby" id="dancing">
+            <label for="sketching">Sketching</label>   
+            <input type="checkbox" name="hobby" id="sketching">
+            <label for="others">Others</label>
+            <input type="checkbox" name="hobby" id="others">
+            <label for="other-hobby"></label>
+            <input type="text" name="hobby" id="other-hobby">
+            </span>
+        </div>
+
+        <div>
+            <label>Qualification</label>
+            <table>
+                <tr>
+                    <th>S.No.</th>
+                    <th>Examination</th>
+                    <th>Board</th>
+                    <th>Percentage</th>
+                    <th>Year of Passing</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Class X</td>
+                    <td><input type="text"></td>                    
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Class XII</td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+                 <tr>
+                    <td>3</td>
+                    <td>Graduation</td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+                 <tr>
+                    <td>4</td>
+                    <td>Masters</td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+            </table>
+
+        </div>
+
+
+        <div>
+            <label>Courses Applied for</label>
+            <span>
+            <label for="bca">BCA</label>
+            <input type="radio" name="course" id="bca">
+            <label for="bcom">B.Com</label>
+            <input type="radio" name="course" id="bcom">
+            <label for="bsc">B.Sc</label>
+            <input type="radio" name="course" id="bsc">
+            <label for="ba">B.A</label>
+            <input type="radio" name="course" id="ba">
+            </span>
+        </div>
+    
+        <div>
+        <input type="reset" value="Reset" id="reset">
+        <input type="submit" value="Submit" id="submit">
+        </div>
+
+
+    </form>
+
+    </div>
+</body>
+</html>
