@@ -173,8 +173,7 @@ header {
 /* Fixed Background */
 
 .background {
-    background-image: url(/images/ehsaas&saylani.jpeg);
-    /* max-width: 100%;? */
+    background-image: url(/home/heezjee/desktop/Desktop/saylaniWebApp/Saylani\ Landing\ Page/images/ehsaas&saylani.jpeg);
     height: 500px;
     background-position: center;
     background-attachment: fixed;
